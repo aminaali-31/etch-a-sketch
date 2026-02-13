@@ -1,6 +1,8 @@
 console.log("Hello I have been loaded");
 let cont = document.querySelector('.container')
-let btn = document.querySelector('button')
+let btn = document.querySelector('#size')
+let clear = document.querySelector("#clear")
+clear.addEventListener('click', () => createGrid(15*15,15));
 btn.addEventListener('click', () => askSize())
 let n = 16;
 createGrid(n*n ,16);
